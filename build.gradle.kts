@@ -7,6 +7,7 @@ plugins {
 	id("com.github.ben-manes.versions")
 	id("com.diffplug.gradle.spotless")
 	id("de.marcphilipp.nexus-publish") apply false
+	id("org.junit.build.stats.mavencentral")
 }
 
 buildScan {
