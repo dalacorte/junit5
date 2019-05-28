@@ -134,7 +134,7 @@ class TimeoutExtensionTests extends AbstractJupiterTestEngineTests {
 			}));
 	}
 
-	@Test
+	@RepeatedTest(100)
 	@DisplayName("fails uninterruptible methods")
 	void failsUninterruptibleMethods() {
 		EngineExecutionResults results = executeTestsForClass(UninterruptibleMethodTestCase.class);
